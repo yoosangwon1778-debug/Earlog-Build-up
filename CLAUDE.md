@@ -43,6 +43,7 @@ React(Vite) + React Router로 바로 시작. 반복되는 부분은 컴포넌트
 ## Git
 
 - 기능 작업은 화면마다 브랜치를 만들어서 진행 (예: `feat/calendar`)
+- 커밋 메시지에 `Co-Authored-By: Claude …` 줄을 넣지 않음 (GitHub 기여자에 Claude가 나오면 안 됨)
 
 ## 작업 방식
 
