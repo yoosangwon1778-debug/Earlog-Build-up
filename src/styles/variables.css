@@ -1,0 +1,40 @@
+:root {
+  --bg: #F6F5FA;
+  --surface-side: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-low: #FFFFFF;
+  --field: #FFFFFF;
+  --border: #E7E5EF;
+  --border-subtle: #EDEBF3;
+  --border-strong: #DCD8E8;
+  --text: #16151F;
+  --text-2: #3A3848;
+  --text-sub: #5E5C6E;
+  --text-muted: #6E6B80;
+  --accent: #5B3FD9;
+  --accent-text: #5B3FD9;
+  --accent-soft: #EFEBFD;
+  --accent-line: #5B3FD9;
+  --danger: #C42B3B;
+  --danger-bg: #C42B3B;
+  --sunday: #C42B3B;
+  --invert-bg: #16151F;
+  --invert-text: #FFFFFF;
+
+  --mood-calm-a: #5B74E0;    --mood-calm-b: #1F2660;
+  --mood-flutter-a: #E0689F; --mood-flutter-b: #6B2A8F;
+  --mood-excited-a: #F07A35; --mood-excited-b: #A3223F;
+  --mood-focus-a: #2FA87C;   --mood-focus-b: #155552;
+  --mood-gloomy-a: #77829A;  --mood-gloomy-b: #2A303C;
+
+  --shadow-card: 0 10px 30px rgba(22, 21, 31, .05);
+
+  --radius-pill: 999px;
+  --radius-xl: 24px;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 12px;
+
+  --font-body: 'Noto Sans KR', sans-serif;
+  --font-num: 'Space Grotesk', 'Noto Sans KR', sans-serif;
+}
