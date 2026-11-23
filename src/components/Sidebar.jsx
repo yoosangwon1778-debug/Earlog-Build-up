@@ -2,9 +2,13 @@ import { Link, NavLink } from 'react-router-dom'
 import { Plus, Calendar, List, User, CircleDot } from 'lucide-react'
 import logo from '../assets/logo.svg'
 import './Sidebar.css'
-
+import { records } from '../data/records'
+import { MOODS } from '../constants/moods'
 
 const Sidebar = () => {
+  const recent = [...records].sort((a,b)=>b.date.localeCompare(a.date))[0]
+  const mood = MOODS.find((m) => m.id === recent.mood)
+  const nickname = "리즈"
   return (
     <aside className='sidebar'>
       <Link to='/calendar' className='sidebar-logo'>
@@ -27,6 +31,27 @@ const Sidebar = () => {
         <li><NavLink to='/genres'><CircleDot size={18} />장르별</NavLink></li>
       </ul>
       </nav>
+
+      <div className="sidebar-bottom">
+      <Link to={`/records/${recent.date}`} className='recent-card'>
+      <span className="recent-cover"
+        style={{background:`linear-gradient(135deg, ${mood.a}, ${mood.b})`}}>
+      </span>
+      <div>
+        <p className="recent-label">최근 기록 · {recent.date.slice(5).replace('-','.')}</p>
+        <p className="recent-song">{recent.song}</p>
+        <p className="recent-artist">{recent.artist}</p>
+      </div>
+      </Link>
+
+      <div className="profile-row">
+        <Link to='/profile' className='profile-link'>
+        <span className="profile-avatar">{nickname[0]}</span>
+        <span className="profile-name">{nickname}님</span>
+        </Link>
+        <button type='button' className='logout-btn'>로그아웃</button>
+      </div>
+      </div>
     </aside>
   )
 }
