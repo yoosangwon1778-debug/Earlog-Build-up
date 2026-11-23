@@ -27,6 +27,15 @@
   --mood-focus-a: #2FA87C;   --mood-focus-b: #155552;
   --mood-gloomy-a: #77829A;  --mood-gloomy-b: #2A303C;
 
+  --genre-ballad-a: #2A8FA8; --genre-ballad-b: #0D3340;
+  --genre-dance-a: #D9A62A;  --genre-dance-b: #5C3E08;
+  --genre-hiphop-a: #9A6438; --genre-hiphop-b: #33200F;
+  --genre-rnb-a: #A8385F;    --genre-rnb-b: #3B0F22;
+  --genre-indie-a: #7D9838;  --genre-indie-b: #2A3810;
+  --genre-rock-a: #C43A2C;   --genre-rock-b: #220A08;
+  --genre-ost-a: #8657D3;    --genre-ost-b: #28185A;
+  --genre-etc-a: #8A8274;    --genre-etc-b: #2E2A24;
+
   --shadow-card: 0 10px 30px rgba(22, 21, 31, .05);
 
   --radius-pill: 999px;
