@@ -1,0 +1,40 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 48px;
+    padding: 0 22px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-pill);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: var(--accent);
+    color: var(--invert-text);
+}
+.btn-secondary {
+    background-color: var(--surface);
+    border-color: var(--border-strong);
+    color: var(--text);
+    font-weight: 500;
+}
+.btn-danger-outline {
+    background-color: var(--surface);
+    border-color: var(--danger-line);
+    color: var(--danger);
+    font-weight: 500;
+}
+.btn-danger {
+    background-color: var(--danger-bg);
+    color: var(--invert-text);
+}
+.btn-kakao {
+    background-color: var(--kakao-bg);
+    color: var(--kakao-text);
+}
+.btn-full {
+    width: 100%;
+}
