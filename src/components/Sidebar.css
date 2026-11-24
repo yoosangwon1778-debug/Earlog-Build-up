@@ -68,12 +68,6 @@
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
 }
-.recent-cover {
-    width: 44px;
-    height: 44px;
-    border-radius: 8px;
-    flex-shrink: 0;
-}
 .recent-label {
     font-size: 11px;
     color: var(--text-muted);

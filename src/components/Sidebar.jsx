@@ -3,11 +3,10 @@ import { Plus, Calendar, List, User, CircleDot } from 'lucide-react'
 import logo from '../assets/logo.svg'
 import './Sidebar.css'
 import { records } from '../data/records'
-import { MOODS } from '../constants/moods'
+import CoverArt from './CoverArt'
 
 const Sidebar = () => {
   const recent = [...records].sort((a,b)=>b.date.localeCompare(a.date))[0]
-  const mood = MOODS.find((m) => m.id === recent.mood)
   const nickname = "리즈"
   return (
     <aside className='sidebar'>
@@ -34,9 +33,7 @@ const Sidebar = () => {
 
       <div className="sidebar-bottom">
       <Link to={`/records/${recent.date}`} className='recent-card'>
-      <span className="recent-cover"
-        style={{background:`linear-gradient(135deg, ${mood.a}, ${mood.b})`}}>
-      </span>
+      <CoverArt mood={recent.mood} photoUrl={recent.photoUrl} size={44} lp={false} />
       <div>
         <p className="recent-label">최근 기록 · {recent.date.slice(5).replace('-','.')}</p>
         <p className="recent-song">{recent.song}</p>

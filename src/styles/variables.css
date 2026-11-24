@@ -36,6 +36,9 @@
   --genre-ost-a: #8657D3;    --genre-ost-b: #28185A;
   --genre-etc-a: #8A8274;    --genre-etc-b: #2E2A24;
 
+  --lp-line: rgba(255, 255, 255, .18);
+  --lp-dot: rgba(255, 255, 255, .25);
+  
   --shadow-card: 0 10px 30px rgba(22, 21, 31, .05);
 
   --radius-pill: 999px;
