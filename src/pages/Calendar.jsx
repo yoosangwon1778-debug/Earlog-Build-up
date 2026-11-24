@@ -1,8 +1,12 @@
+import { useState } from 'react'
+import Chip from '../components/Chip'
+import { GENRES } from '../constants/genres'
 import { Plus, Pencil, Trash2 } from 'lucide-react'
 import CoverArt from '../components/CoverArt'
 import Button from '../components/Button'
 
 const Calendar = () => {
+    const [genre, setGenre] = useState('전체') 
   return (
     <div>
     <div style={{ display: 'flex', gap: 16, alignItems: 'flex-end' }}>
@@ -23,6 +27,22 @@ const Calendar = () => {
 
       <div style={{ width: 400, marginTop: 16 }}>
         <Button full>로그인</Button>
+      </div>
+            <div style={{ display: 'flex', gap: 8, marginTop: 32, alignItems: 'center' }}>
+        <Chip variant='mood' mood='CALM' />
+        <Chip variant='mood' mood='EXCITED' />
+        <Chip>K · 발라드</Chip>
+        <Chip variant='tag'>새벽</Chip>
+        <Chip variant='tag'>산책</Chip>
+        <Chip variant='tag' onRemove={() => console.log('퇴근길 지우기')}>퇴근길</Chip>
+      </div>
+
+      <div style={{ display: 'flex', gap: 8, marginTop: 16 }}>
+        {['전체', ...GENRES].map((g) => (
+          <Chip key={g} variant='filter' selected={genre === g} onClick={() => setGenre(g)}>
+            {g}
+          </Chip>
+        ))}
       </div>
     </div>
   )
