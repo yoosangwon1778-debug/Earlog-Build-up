@@ -38,3 +38,7 @@
 .btn-full {
     width: 100%;
 }
+.btn-invert {
+    background-color: var(--invert-bg);
+    color: var(--invert-text);
+}

@@ -44,6 +44,7 @@
   --lp-dot: rgba(255, 255, 255, .25);
   
   --shadow-card: 0 10px 30px rgba(22, 21, 31, .05);
+  --shadow-hero: 0 30px 70px rgba(36, 37, 102, .12);
 
   --radius-pill: 999px;
   --radius-xl: 24px;
