@@ -9,6 +9,7 @@
 | `reference/docs/Earlog_서비스기획서.md` | 기능·화면·데이터 구조를 정할 때 |
 | `reference/docs/Earlog_디자인가이드_v2.md` | 색·글꼴·간격·컴포넌트·CSS 변수를 쓸 때 |
 | `reference/design/screens/*.png` | 화면을 만들 때 해당 번호 이미지를 열어서 보고 맞추기 |
+| `reference/design/html/*.html` | 같은 번호 화면의 코드가 있으면: **모양은 PNG**, **색·크기·간격·문구는 HTML**에서 가져옴. HTML을 그대로 복사하지 않고 React 컴포넌트 + CSS 변수로 다시 씀 (지금은 `00_landing.html`만 있음, 11/25 새 버전) |
 | `reference/design/plan/*.png` | 작업 순서 확인 |
 
 화면 하나를 만들기 전에는 그 화면의 PNG를 직접 열어 보고, 디자인 가이드의 토큰 값으로 구현해요.
